@@ -30,6 +30,12 @@ jobs:
       - name: Install dependencies
         run: npm install -g @capacitor/cli@6 && npm install @capacitor/core@6 @capacitor/android@6 typescript
 
+      - name: Create assets directory and required files
+        run: |
+          mkdir -p android/app/src/main/assets/public
+          echo '{}' > android/app/src/main/assets/capacitor.config.json
+          echo '[]' > android/app/src/main/assets/capacitor.plugins.json
+
       - name: Sync Capacitor
         run: npx cap sync android
 
