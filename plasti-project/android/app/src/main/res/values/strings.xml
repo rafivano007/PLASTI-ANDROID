@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">بلاصتي</string>
-    <string name="title_activity_main">بلاصتي</string>
-    <string name="package_name">app.lovable.plasti</string>
-    <string name="custom_url_scheme">app.lovable.plasti</string>
-</resources>
